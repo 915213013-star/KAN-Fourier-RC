@@ -1,7 +1,0 @@
-dataset,split_size,system,correct_count,accuracy_percent,gain_over_primary_pp,evidence_status
-RML2016.10A,22000,Primary,13999,63.631818,0.000000,aggregate_and_frozen_archive_audited
-RML2016.10A,22000,Full_ERU_RC,14593,66.331818,2.700000,aggregate_and_frozen_archive_audited
-RML2016.10B,120000,Primary,78193,65.160833,0.000000,aggregate_benchmark_audited
-RML2016.10B,120000,Full_ERU_RC,79402,66.168333,1.007500,aggregate_benchmark_audited
-HisarMod2019.1,260000,Primary,202200,77.769231,0.000000,aggregate_and_frozen_archive_audited
-HisarMod2019.1,260000,Full_ERU_RC,207654,79.866923,2.097692,aggregate_and_frozen_archive_audited

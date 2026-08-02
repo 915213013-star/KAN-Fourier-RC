@@ -1,7 +1,0 @@
-dataset,partition,partition_size,analysis_role,primary_percent,frozen_policy_percent,gain_pp,ci95_low_pp,ci95_high_pp,changed_percent,rescue_percent,harm_percent,physical_channel_claim
-HisarMod2019.1,Storage_block_1,52000,post_hoc_sensitivity,,,4.681,4.417,4.942,,,,not_claimed
-HisarMod2019.1,Storage_block_2,52000,post_hoc_sensitivity,,,1.635,1.421,1.844,,,,not_claimed
-HisarMod2019.1,Storage_block_3,52000,post_hoc_sensitivity,,,1.292,1.110,1.467,,,,not_claimed
-HisarMod2019.1,Storage_block_4,52000,post_hoc_sensitivity,,,1.115,0.935,1.300,,,,not_claimed
-HisarMod2019.1,Storage_block_5,52000,post_hoc_sensitivity,,,1.765,1.556,1.975,,,,not_claimed
-HisarMod2019.1,All_storage_blocks,260000,post_hoc_sensitivity,77.769231,79.866923,2.097692,2.003,2.190,10.433077,4.204231,2.106538,not_claimed
