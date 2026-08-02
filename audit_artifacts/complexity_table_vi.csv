@@ -1,0 +1,5 @@
+dataset,component,trainable_parameters,macs,flops,input_length,classes,provenance
+RadioML2016.10A/10B,KAN-Fourier primary,197290,1424000,2848000,128,11,formal full_geo_2expert architecture; one MAC equals two FLOPs
+RadioML2016.10A/10B,Deployed neural subtotal,369407,5430500,10861000,128,11,KAN-Fourier plus IQCC-Former; non-neural policy logic reported separately
+HisarMod2019.1,KAN-Fourier primary,467600,11030000,22060000,1024,26,frozen budget architecture ledger
+HisarMod2019.1,Deployed neural subtotal,726200,32511000,65022000,1024,26,frozen budget system ledger; non-neural policy logic reported separately

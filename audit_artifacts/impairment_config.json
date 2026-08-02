@@ -1,0 +1,48 @@
+{
+  "dataset": "HisarMod2019.1",
+  "analysis_role": "post_hoc_frozen_policy_sensitivity",
+  "sample_count": 260000,
+  "policy_refit": false,
+  "test_label_role": "metric_computation_only",
+  "neural_precision": "fp32",
+  "bootstrap_repetitions": 10000,
+  "bootstrap_stratification": "class_x_snr",
+  "subset_seed": 20260729,
+  "impairment_seed": 20260729,
+  "clean_reference": "recomputed_fp32_clean_control",
+  "formal_headline_reference": "controlled_frozen_prediction_archive",
+  "cfo": {
+    "normalization": "cycles_per_sample",
+    "formula": "x[n] * exp(j*2*pi*epsilon*n)",
+    "epsilon": [-0.001, 0.001, -0.003, 0.003]
+  },
+  "iq_imbalance": {
+    "formula": "I'=gI; Q'=g^{-1}(cos(phi)Q+sin(phi)I); g=10^(gain_db/40)",
+    "gain_db_phase_deg": [[-0.5, -3.0], [0.5, 3.0], [-1.0, -5.0], [1.0, 5.0]],
+    "restore_input_rms": true
+  },
+  "synthetic_multipath": {
+    "tap_count": 3,
+    "pdp_db": [0.0, -3.0, -6.0],
+    "pdp_normalized": true,
+    "per_sample_tap_normalization": true,
+    "restore_input_rms": true,
+    "rayleigh": "circular_complex_gaussian",
+    "rician_k_db": 6.0,
+    "rician_los": "deterministic_component_on_first_tap",
+    "physical_channel_label_claim": false
+  },
+  "conditions": [
+    "clean",
+    "cfo_m001",
+    "cfo_p001",
+    "cfo_m003",
+    "cfo_p003",
+    "iq_mild_neg",
+    "iq_mild_pos",
+    "iq_severe_neg",
+    "iq_severe_pos",
+    "rayleigh_3tap",
+    "rician_k6_3tap"
+  ]
+}
